@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { UploadProvider } from "./context/upload-provider";
+import Header from "@/app/ui/header";
+import Title from "@/app/ui/title";
+import Hint from "@/app/ui/hint";
+import History from "@/app/ui/history";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +21,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="flex min-h-screen flex-col items-center flex-start p-20">
+          <Header />
+          <Title />
+          <UploadProvider>{children}</UploadProvider>
+          <Hint />
+          <History />
+        </main>
+      </body>
     </html>
   );
 }
