@@ -7,6 +7,7 @@ import { useContext, useEffect, useState } from "react";
 import { UploadContext } from "@/app/context/upload-provider";
 import clsx from "clsx";
 import Link from "next/link";
+import handleFileUpload from "@/app/api/upload";
 
 export default function Lang() {
   const { toggleDropField, currentFile, language, languages, selectLang } =
@@ -25,6 +26,14 @@ export default function Lang() {
       toggleDropField(false);
     }
   }, [toggleDropField]);
+
+  const today = new Date()
+
+  const uploadData = {
+    name: currentFile?.name,
+    size: currentFile?.size ? ((Math.round(currentFile?.size*100/2**20))/100).toString() + " Mb" : "undefined",
+    lang: languages?.filter((item) => {return item.title == language})[0].value,
+  }
 
   return (
     <div className="h-full flex flex-col justify-evenly items-center">
@@ -114,6 +123,10 @@ export default function Lang() {
             buttonType="primary"
             handler={(event) => {
               router.push("/progress", { scroll: false });
+
+              console.log(console.log(uploadData))
+
+              handleFileUpload(uploadData)
             }}
           >
             Начать перевод

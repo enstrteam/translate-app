@@ -35,7 +35,7 @@ export default function Succeed() {
         нажмите кнопку ниже
       </span>
       <div className="flex flex-row gap-8 justify-center items-center">
-        <Link href="">
+        <Link href={"URL://" + resultFile?.name}>
           <Button buttonType="primary" handler={(event) => {}}>
             Скачать
           </Button>

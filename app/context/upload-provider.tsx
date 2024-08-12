@@ -96,7 +96,7 @@ export const UploadProvider = ({ children }: { children: React.ReactNode }) => {
       });
       const status = await res.status;
       setCurrentFile(file);
-      console.log(status, "sending file:", currentFile);
+
       router.push("/lang", { scroll: false });
     } catch (e) {
       console.log(e);
