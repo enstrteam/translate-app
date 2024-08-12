@@ -103,6 +103,8 @@ export const UploadProvider = ({ children }: { children: React.ReactNode }) => {
     }
   };
 
+ 
+
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files === null) return;
     handleFile(event.target.files[0]);

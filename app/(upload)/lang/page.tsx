@@ -121,10 +121,8 @@ export default function Lang() {
         <div className="flex flex-row gap-8 justify-center items-center">
           <Button
             buttonType="primary"
-            handler={(event) => {
+            handler={() => {
               router.push("/progress", { scroll: false });
-
-              console.log(console.log(uploadData))
 
               handleFileUpload(uploadData)
             }}
