@@ -5,7 +5,6 @@ import Link from "next/link";
 import clsx from "clsx";
 
 export default async function History() {
-
   const files = await getHistory();
 
   return (
