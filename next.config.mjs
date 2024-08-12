@@ -2,7 +2,7 @@
 
 
 const nextConfig = {
-    distDir: 'docs',
+    // distDir: 'docs',
 };
 
 export default nextConfig;
