@@ -1,7 +1,6 @@
 # Frontend для сервиса перевода медицинских документов
 
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) 
-  +
 ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
 
 ![Frame 1](https://github.com/user-attachments/assets/04111f52-73e4-4816-bc4d-e0f00adc861c)
