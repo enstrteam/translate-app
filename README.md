@@ -1,5 +1,6 @@
 # Frontend для сервиса перевода медицинских документов
 
+### NextJS + Prisma
 
 ![Frame 1](https://github.com/user-attachments/assets/04111f52-73e4-4816-bc4d-e0f00adc861c)
 ![Frame 2](https://github.com/user-attachments/assets/dbe523a1-04b3-4d2b-97e9-3e68c4a174da)
