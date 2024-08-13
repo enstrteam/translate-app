@@ -2,6 +2,7 @@
 
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) 
 ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ![Frame 1](https://github.com/user-attachments/assets/04111f52-73e4-4816-bc4d-e0f00adc861c)
 ![Frame 2](https://github.com/user-attachments/assets/dbe523a1-04b3-4d2b-97e9-3e68c4a174da)
