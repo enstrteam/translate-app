@@ -11,7 +11,7 @@ export default function UploadLayout({children} : {children: React.ReactNode}) {
 
 
     return (
-        <div className={clsx("mb-11 w-[1082px] h-[526px] bg-white rounded-[45px]", {
+        <div className={clsx("mb-11 w-[1082px] h-[526px] bg-white rounded-[45px] overflow-hidden", {
             "border-8 border-dashed": droppableField == true,
         })}>
             {children}
