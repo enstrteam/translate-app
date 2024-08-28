@@ -3,10 +3,11 @@
 import getHistory from "../api/history";
 import Link from "next/link";
 import clsx from "clsx";
+import { File } from "../api/history"
 
 export default async function History() {
   
-  const files = await getHistory();
+  const files: File[] = await getHistory();
 
   return (
     <>
@@ -25,7 +26,7 @@ export default async function History() {
           <tbody>
             {files.map((item) => {
               return (
-                <tr key={item.name}>
+                <tr key={item.id}>
                   <td className="text-nowrap truncate ...">{item.name}</td>
                   <td>{item.lang}</td>
                   <td>{item.size}</td>
